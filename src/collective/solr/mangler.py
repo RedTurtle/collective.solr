@@ -1,3 +1,4 @@
+print "MANGLER"
 from zope.component import queryUtility
 from AccessControl import getSecurityManager
 from DateTime import DateTime
@@ -241,7 +242,7 @@ def extractQueryParameters(args):
     if limit:
         params['rows'] = int(limit)
     for key, value in args.items():
-        if key in ('fq', 'fl', 'facet', 'hl'):
+        if key in ('fq', 'bq', 'fl', 'facet', 'hl'):
             params[key] = value
             del args[key]
         elif key.startswith('facet.') or key.startswith('facet_'):
