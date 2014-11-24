@@ -117,7 +117,7 @@ class SolrConnection:
             self.conn.request('POST', url, body, headers)
             return self.__errcheck(self.conn.getresponse())
         except (socket.error, httplib.CannotSendRequest,
-            httplib.ResponseNotReady, httplib.BadStatusLine):
+            httplib.ResponseNotReady, httplib.BadStatusLine) as e:
             # Reconnect in case the connection was broken from the server
             # going down, the server timing out our persistent connection, or
             # another network failure. Also catch httplib.CannotSendRequest,
