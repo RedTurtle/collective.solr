@@ -1,2 +1,8 @@
 include *.txt *.rst
+include tox.ini .coveragerc
 recursive-include src *
+recursive-include docs *
+recursive-include etc *
+global-exclude *.pyc
+prune buildout
+exclude bootstrap.py *.cfg *.yml *.sh, *.diff
