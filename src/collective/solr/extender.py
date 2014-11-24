@@ -1,6 +1,7 @@
 from Acquisition import aq_base
 from archetypes.schemaextender.field import ExtensionField
-from archetypes.schemaextender.interfaces import ISchemaExtender
+from archetypes.schemaextender.interfaces import ISchemaExtender, IBrowserLayerAwareExtender
++from collective.solr.browser.interfaces import IDefaultLayer
 from plone.indexer import indexer
 from Products.Archetypes.atapi import BooleanField
 from Products.Archetypes.atapi import BooleanWidget
@@ -51,8 +52,9 @@ class ExtensionBooleanField(ExtensionField, BooleanField):
 
 class SearchExtender(object):
     """Adapter that adds search metadata."""
+    implements(ISchemaExtender, IBrowserLayerAwareExtender)
 
-    implements(ISchemaExtender)
+    layer = IDefaultLayer
 
     _fields = [
         ExtensionBooleanField(

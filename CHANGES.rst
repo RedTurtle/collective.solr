@@ -1,7 +1,7 @@
 Changelog
 =========
 
-4.0.2 (unreleased)
+4.0.2-rer (unreleased)
 ------------------
 
 - Fix typo in Binary Indexer
@@ -26,6 +26,8 @@ Changelog
 - Fix Subject handling in FlareContentListingObject [cekk]
 
 - Add support to ``not in`` index [cekk]
+
+- schemaextender now uses browserlayer [cekk]
 
 
 4.0.1 (2014-02-05)
