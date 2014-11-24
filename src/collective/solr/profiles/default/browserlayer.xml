@@ -1,0 +1,4 @@
+<layers>
+  <layer name="collective.solr.default" 
+         interface="collective.solr.browser.interfaces.IDefaultLayer" />
+</layers>
