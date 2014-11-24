@@ -1,8 +1,8 @@
 Changelog
 =========
 
-4.0.2-rer (unreleased)
-------------------
+4.0.2-rer1 (2014-11-24)
+-----------------------
 
 - Fix typo in Binary Indexer
   [giacomos]
