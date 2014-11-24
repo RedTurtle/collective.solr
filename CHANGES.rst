@@ -1,18 +1,6 @@
 Changelog
 =========
 
-4.0.2-rer3 (unreleased)
------------------------
-
-- Nothing changed yet.
-
-
-4.0.2-rer2 (2014-11-24)
------------------------
-
-- Fix import in extender.py [cekk]
-
-
 4.0.2-rer1 (2014-11-24)
 -----------------------
 
